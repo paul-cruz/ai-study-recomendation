@@ -32,7 +32,7 @@ function App() {
       <div className="card">
         <input placeholder='Ingresa el tema a recomendar' value={topic} onChange={handleInput}/>
         <button onClick={handleClick}>Enviar</button>
-        <h2>Gemini recomienda:</h2  ><br/>
+        <h2>Gemini recomienda prestar atención a los siguientes temas:</h2  ><br/>
         {data ? <div><Markdown>{data}</Markdown></div> : <div>Loading...</div>}
       </div>
     </>
